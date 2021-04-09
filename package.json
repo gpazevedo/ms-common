@@ -1,0 +1,8 @@
+{
+  "name": "@symcloud/commonk8s",
+  "version": "1.0.0",
+  "description": "Common Kubernetes Libaries",
+  "main": "index.js",
+  "author": "Gustavo Peixoto de Azevedo",
+  "license": "MIT"
+}

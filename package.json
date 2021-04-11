@@ -2,7 +2,28 @@
   "name": "@symcloud/commonk8s",
   "version": "1.0.0",
   "description": "Common Kubernetes Libaries",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc"
+  },
   "author": "Gustavo Peixoto de Azevedo",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cookie-session": "^2.0.42",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.1",
+    "del-cli": "^3.0.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "jsonwebtoken": "^8.5.1"
+  }
 }
